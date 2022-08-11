@@ -40,7 +40,7 @@ export default function AppHeader() {
             mt={'2'}
             width={'100%'}>
             <Box bg={textColor[colorMode]} borderRadius={'2px'}>
-              <Button as={'a'} p={[1,2,4]}  variant={'ghost'} bg={'whiteAlpha.100'}>
+              <Button as={'a'} p={[1,2,4]}  variant={'ghost'} bg={'whiteAlpha.100'} href="/">
                 <Text color={textColor[colorMode]}>Home</Text>
               </Button>
             </Box>

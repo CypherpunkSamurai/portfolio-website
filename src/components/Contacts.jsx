@@ -54,7 +54,7 @@ export default function Contacts() {
           <Link href={"mailto:" + UserData['email']}>
             <IconButton><HiOutlineMail></HiOutlineMail></IconButton>
           </Link>
-          <Link href={"mailto" + UserData['email']}>
+          <Link href={"mailto:" + UserData['email']}>
             <Text as='b'>Mail Me</Text>
           </Link>
         </Flex>

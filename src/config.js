@@ -9,7 +9,7 @@ const UserData = {
     'location': 'West Bengal, India',
     'github':   "CypherpunkSamurai",
     'hashnode': "rc202402",
-    'linkedin': '/in/rakeshchow/',
+    'linkedin': 'in/rakeshchow/',
     'email':    'rakeshchow202@gmail.com',
 }
 

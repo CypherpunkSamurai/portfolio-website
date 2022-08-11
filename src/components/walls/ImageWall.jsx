@@ -4,7 +4,7 @@ import React from 'react'
 import { Flex, Box, Image, useColorMode } from '@chakra-ui/react'
 
 
-export default function ThreeJSWall() {
+export default function ImageWall() {
   // ColorMode
   const { colorMode } = useColorMode();
   //

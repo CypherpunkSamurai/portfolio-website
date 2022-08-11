@@ -8,12 +8,13 @@ import App from "./App";
 
 // Chakra UI
 import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
-import { ThemeProvider } from "@emotion/react";
+
+import CustomTheme from './Theme';
 
 // Render
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ChakraProvider>
+  <ChakraProvider theme={CustomTheme}>
       <ColorModeProvider>
         <React.StrictMode>
           <App />
