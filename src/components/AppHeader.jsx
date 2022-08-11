@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Flex, Text, useColorMode } from '@chakra-ui/react';
+import { Box, Button, Flex, Spacer, Text, useColorMode } from '@chakra-ui/react';
 
 // Custom Components Here
 import DarkModeToggle from './DarkModeToggle';
@@ -23,8 +23,10 @@ export default function AppHeader() {
   return (
     <>
       
-      <Flex width={'100%'} as='nav' position={'fixed'} zIndex={'10'} mx='0' top={'-10px'}>
+      <Flex width={'100%'} as='nav' position={'fixed'} zIndex={'10'} mx='0' top={'-10px'} flexDirection={'column'} alignItems={'center'}>
+        
         <Flex
+          width={['60%', '50%']}
           //
           mx={'auto'}
           p={[2,3,3]}
@@ -35,17 +37,14 @@ export default function AppHeader() {
           overflow='hidden'
           align='center'>
           <Flex
-            flexDirection='row'
-            alignContent={'center'}  
-            justifyContent={'space-between'}
-            maxWidth={'100%'}
-            minWidth={'440px'}
-            mt={'2'}>
+            mt={'2'}
+            width={'100%'}>
             <Box bg={textColor[colorMode]} borderRadius={'2px'}>
               <Button as={'a'} p={[1,2,4]}  variant={'ghost'} bg={'whiteAlpha.500'}>
                 <Text color={textColor[colorMode]}>Home</Text>
               </Button>
             </Box>
+            <Spacer />
             <DarkModeToggle />
           </Flex>
         </Flex>
