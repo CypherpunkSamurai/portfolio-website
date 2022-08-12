@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <title>Portfolio | Rakesh's Stories</title>
         <AppHeader />
       </header>
 
@@ -23,8 +24,8 @@ function App() {
 
 
         <Flex width={'inherit'} alignItems={'center'} flexDirection={'column'} my={'33px'}>
-          <Box w='85%' maxW={['80%','60%']} h='400px'>
-            <VoxelWall3D /> 
+          <Box w='85%' maxW={['80%', '60%']} h='400px'>
+            <VoxelWall3D />
           </Box>
           <Introduction />
           <Contacts />

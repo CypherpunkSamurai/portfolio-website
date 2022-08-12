@@ -6,16 +6,8 @@ import DarkModeToggle from './DarkModeToggle';
 
 export default function AppHeader() {
   // ColorMode
-  const { colorMode, _ } = useColorMode();
-  // Button Colors
-  const bgColor = {
-    'light': 'BlackAlpha.100',
-    'dark': 'BlackAlpha.100',
-  }
-  const buttonBgColor = {
-    'light': 'BlackAlpha.100',
-    'dark': 'BlackAlpha.100',
-  }
+  const { colorMode } = useColorMode();
+  // Colors
   const textColor = {
     'light': 'WhiteAlpha.400',
     'dark': 'BlackAlpha.300',

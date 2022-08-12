@@ -1,15 +1,12 @@
-import { Canvas, useThree } from "@react-three/fiber";
-import { useLoader, useFrame  } from "@react-three/fiber";
-import { PerspectiveCamera, PresentationControls, Environment, OrbitControls, SpotLight, Center } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { useLoader } from "@react-three/fiber";
+import { PerspectiveCamera, OrbitControls, Center } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 import * as THREE from 'three';
 
-// React
-import { useEffect, useRef } from "react";
-
 // Chakra UI
-import { Flex, Box, Image, useColorMode } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 
 const Model = () => {
     // Load Model
@@ -33,27 +30,27 @@ function _CanvasScene() {
     // });
     // change the orbital control z
     return (
-        <Canvas width='100%' height='100%' onCreated={state => {state.camera.lookAt(0, 0, 0)}}>
-                <PerspectiveCamera 
-                makeDefault 
-                far={2000} 
-                aspect={2.049719551282051} 
-                focus={35} 
+        <Canvas width='100%' height='100%' onCreated={state => { state.camera.lookAt(0, 0, 0) }}>
+            <PerspectiveCamera
+                makeDefault
+                far={2000}
+                aspect={2.049719551282051}
+                focus={35}
                 //position={[9.808092764228105, 14.320364720193888, 11.444749575892155]} 
-                position={[0,0.560,-10.140]} 
+                position={[0, 0.560, -10.140]}
                 near={0.1}
                 zoom={0.90001}
-                fov={60} 
-                rotation={new THREE.Euler(-0.7626463215081168, 0.07706874407002953, 0.07343410641566032)}/>
-                <ambientLight />
-                    <spotLight
-                        position={[-5, -5, 0]}
-                        angle={Math.PI / 6}
-                        shadow-mapSize-width={2048}
-                        shadow-mapSize-height={2048}
-                        castShadow
-                    />
-                    <Model />
+                fov={60}
+                rotation={new THREE.Euler(-0.7626463215081168, 0.07706874407002953, 0.07343410641566032)} />
+            <ambientLight />
+            <spotLight
+                position={[-5, -5, 0]}
+                angle={Math.PI / 6}
+                shadow-mapSize-width={2048}
+                shadow-mapSize-height={2048}
+                castShadow
+            />
+            <Model />
             <OrbitControls autoRotateSpeed={'5'} autoRotate={true} maxDistance={'50'} minDistance={'20'} minPolarAngle={'0.5'} maxPolarAngle={'0.6'} enableDamping enableZoom />
         </Canvas>
     );
@@ -62,7 +59,7 @@ function _CanvasScene() {
 export default function VoxelWall3D() {
     return (
         <Flex borderRadius={'5px'} flexDirection='column' alignItems={'center'} p='5px' my={'15px'} bg='whiteAlpha.50' w='100%' h='100%'>
-                <_CanvasScene />
+            <_CanvasScene />
         </Flex>
     )
 }

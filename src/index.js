@@ -9,17 +9,17 @@ import App from "./App";
 // Chakra UI
 import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
 
-import CustomTheme from './Theme';
+import CustomTheme from "./Theme";
 
 // Render
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ChakraProvider theme={CustomTheme}>
-      <ColorModeProvider>
-        <React.StrictMode>
-          <App />
-        </React.StrictMode>
-      </ColorModeProvider>
+    <ColorModeProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </ColorModeProvider>
   </ChakraProvider>
 );
 

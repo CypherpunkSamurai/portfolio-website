@@ -16,50 +16,50 @@ import { SiHashnode } from 'react-icons/si';
 export default function Contacts() {
   return (
     <Flex as='div' mt={'2rem'} w='55%' flexDirection={'column'} alignItems={'center'} gap='1rem'>
-    <Grid gap={'1rem'}>
-      <GridItem>
-        <Flex flexDirection={'row'} alignItems={'center'} gap={'10px'}>
-          <Link href={"https://github.com/" + UserData['github']}>
-            <IconButton><DiGithubAlt></DiGithubAlt></IconButton>
-          </Link>
-          <Link href={"https://github.com/" + UserData['github']}>
-            <Text as='b'>Github</Text>
-          </Link>
-          {console.log(UserData['github'])}
-          
-        </Flex>
-      </GridItem>
-      <GridItem>
-        <Flex flexDirection={'row'} alignItems={'center'} gap={'10px'}>
-          <Link href={"https://" + UserData['hashnode'] + ".hashnode.com/"}>
-            <IconButton><SiHashnode></SiHashnode></IconButton>
-          </Link>
-          <Link href={"https://" + UserData['hashnode'] + ".hashnode.com/"}>
-            <Text as='b'>HashNode</Text>
-          </Link>
-        </Flex>
-      </GridItem>
-      <GridItem>
-        <Flex flexDirection={'row'} alignItems={'center'} gap={'10px'}>
-          <Link href={"https://www.linkedin.com/" + UserData['linkedin']}>
-            <IconButton><ImLinkedin2></ImLinkedin2></IconButton>
-          </Link>
-          <Link href={"https://www.linkedin.com/" + UserData['linkedin']}>
-            <Text as='b'>LinkedIn</Text>
-          </Link>
-        </Flex>
-      </GridItem>
-      <GridItem>
-        <Flex flexDirection={'row'} alignItems={'center'} gap={'10px'}>
-          <Link href={"mailto:" + UserData['email']}>
-            <IconButton><HiOutlineMail></HiOutlineMail></IconButton>
-          </Link>
-          <Link href={"mailto:" + UserData['email']}>
-            <Text as='b'>Mail Me</Text>
-          </Link>
-        </Flex>
-      </GridItem>
-    </Grid>
-  </Flex>
+      <Grid gap={'1rem'}>
+        <GridItem>
+          <Flex flexDirection={'row'} alignItems={'center'} gap={'10px'}>
+            <Link href={"https://github.com/" + UserData['github']}>
+              <IconButton><DiGithubAlt></DiGithubAlt></IconButton>
+            </Link>
+            <Link href={"https://github.com/" + UserData['github']}>
+              <Text as='b'>Github</Text>
+            </Link>
+            {console.log(UserData['github'])}
+
+          </Flex>
+        </GridItem>
+        <GridItem>
+          <Flex flexDirection={'row'} alignItems={'center'} gap={'10px'}>
+            <Link href={"https://" + UserData['hashnode'] + ".hashnode.com/"}>
+              <IconButton><SiHashnode></SiHashnode></IconButton>
+            </Link>
+            <Link href={"https://" + UserData['hashnode'] + ".hashnode.com/"}>
+              <Text as='b'>HashNode</Text>
+            </Link>
+          </Flex>
+        </GridItem>
+        <GridItem>
+          <Flex flexDirection={'row'} alignItems={'center'} gap={'10px'}>
+            <Link href={"https://www.linkedin.com/" + UserData['linkedin']}>
+              <IconButton><ImLinkedin2></ImLinkedin2></IconButton>
+            </Link>
+            <Link href={"https://www.linkedin.com/" + UserData['linkedin']}>
+              <Text as='b'>LinkedIn</Text>
+            </Link>
+          </Flex>
+        </GridItem>
+        <GridItem>
+          <Flex flexDirection={'row'} alignItems={'center'} gap={'10px'}>
+            <Link href={"mailto:" + UserData['email']}>
+              <IconButton><HiOutlineMail></HiOutlineMail></IconButton>
+            </Link>
+            <Link href={"mailto:" + UserData['email']}>
+              <Text as='b'>Mail Me</Text>
+            </Link>
+          </Flex>
+        </GridItem>
+      </Grid>
+    </Flex>
   )
 }
