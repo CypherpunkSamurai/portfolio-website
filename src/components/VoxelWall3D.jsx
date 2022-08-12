@@ -21,7 +21,7 @@ const Model = () => {
 };
 
 // Functions
-function _CanvasScene() {
+function CanvasScene() {
     // const control = useRef();
     // useEffect(() => {
     //     const interval = setInterval(() => {
@@ -59,7 +59,7 @@ function _CanvasScene() {
 export default function VoxelWall3D() {
     return (
         <Flex borderRadius={'5px'} flexDirection='column' alignItems={'center'} p='5px' my={'15px'} bg='whiteAlpha.50' w='100%' h='100%'>
-            <_CanvasScene />
+            <CanvasScene />
         </Flex>
     )
 }

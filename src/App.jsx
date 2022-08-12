@@ -1,10 +1,8 @@
 import "./App.css";
 // import logo from './logo.svg';
 
-
 // Chakra UI
 import { Flex, Box } from '@chakra-ui/react';
-import AppHeader from "./components/AppHeader";
 
 // Load Config
 import Contacts from "./components/Contacts";
@@ -14,12 +12,9 @@ import VoxelWall3D from "./components/VoxelWall3D";
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <title>Portfolio | Rakesh's Stories</title>
-        <AppHeader />
-      </header>
-
+      
       <body>
 
 
@@ -34,7 +29,6 @@ function App() {
 
 
       </body>
-
     </div>
   );
 }

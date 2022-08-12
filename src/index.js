@@ -1,10 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
+// For Dynamic Titles
+import Helmet from "react-helmet";
+
 //
 import reportWebVitals from "./reportWebVitals";
 
 // App
 import App from "./App";
+import AppHeader from './components/AppHeader';
 
 // Chakra UI
 import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
@@ -16,9 +21,18 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ChakraProvider theme={CustomTheme}>
     <ColorModeProvider>
+      <head>
+        <Helmet>
+          <title>Rakesh's Stories | Portfolio</title>
+        </Helmet>
+      </head>
       <React.StrictMode>
+        <header className="App-header">
+          <AppHeader />
+        </header>
         <App />
       </React.StrictMode>
+
     </ColorModeProvider>
   </ChakraProvider>
 );
