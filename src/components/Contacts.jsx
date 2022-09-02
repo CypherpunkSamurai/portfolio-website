@@ -34,7 +34,7 @@ export default function Contacts() {
             <Link href={"https://" + UserData['hashnode'] + ".hashnode.com/"}>
               <IconButton><SiHashnode></SiHashnode></IconButton>
             </Link>
-            <Link href={"https://" + UserData['hashnode'] + ".hashnode.com/"}>
+            <Link href={"https://" + UserData['hashnode'] + ".hashnode.dev/"}>
               <Text as='b'>HashNode</Text>
             </Link>
           </Flex>

@@ -3,7 +3,7 @@ const UserData = {
   name: "Rakesh Chowdhury",
   "best-skill": "Full Stack Developer",
   course: "B.Tech CSE",
-  "course-year": "2nd",
+  "course-year": "2nd Year",
   location: "West Bengal, India",
   github: "CypherpunkSamurai",
   hashnode: "rc202402",
