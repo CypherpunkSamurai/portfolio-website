@@ -19,9 +19,9 @@ npm build
 
 ## Todo
 
-[ ] Add Sakura falling animation.
-[ ] Add a website footer.
-[ ] Add Blog link.
+- [ ] Add Sakura falling animation.
+- [ ] Add a website footer.
+- [ ] Add Blog link.
 
 ## What's Changed?
 
