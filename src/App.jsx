@@ -10,6 +10,7 @@ import Introduction from "./components/Introduction";
 import VoxelWall3D from "./components/VoxelWall3D";
 
 
+
 function App() {
   return (
     
@@ -20,7 +21,7 @@ function App() {
 
         <Flex width={'inherit'} alignItems={'center'} flexDirection={'column'} my={'33px'}>
           <Box w='85%' maxW={['80%', '60%']} h='400px'>
-            <VoxelWall3D />
+              <VoxelWall3D />
           </Box>
           <Introduction />
           <Contacts />
