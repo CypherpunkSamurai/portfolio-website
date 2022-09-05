@@ -3,15 +3,15 @@ import { Flex } from '@chakra-ui/react';
 
 // ThreeJS
 import * as THREE from 'three';
-import { Canvas } from "@react-three/fiber";
-import { useLoader } from "@react-three/fiber";
-import { PerspectiveCamera, OrbitControls, Center } from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { Canvas } from '@react-three/fiber';
+import { useLoader } from '@react-three/fiber';
+import { PerspectiveCamera, OrbitControls, Center } from '@react-three/drei';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 // Loader Animation
 import { Suspense } from 'react';
 import { Html } from '@react-three/drei'
-import { FadingDots } from "react-cssfx-loading";
+import { FadingDots } from 'react-cssfx-loading';
 
 
 // Loader (when fiber is loading)
