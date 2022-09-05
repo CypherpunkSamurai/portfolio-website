@@ -2361,10 +2361,10 @@
     utility-types "^3.10.0"
     zustand "^3.5.13"
 
-"@react-three/fiber@^8.3.1":
-  version "8.3.1"
-  resolved "https://registry.npmjs.org/@react-three/fiber/-/fiber-8.3.1.tgz"
-  integrity sha512-5I1fcnE/3Y89MBNtC58N4ZEm962NqlFwBChhS09AVBz9PmD51uwY0z4y6WPMoVVKhUG39CS6iSbTPQwZygkerA==
+"@react-three/fiber@^8.7.1":
+  version "8.7.1"
+  resolved "https://registry.npmjs.org/@react-three/fiber/-/fiber-8.7.1.tgz"
+  integrity sha512-ruDqawrbFzlO0ugCcKA2ELfN/nMehy+XcEiP2/WSEBcexulziUCm99RU3jEVsICuvarDscRmRJbmKqdyFrVTJQ==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@types/react-reconciler" "^0.26.7"
@@ -5563,6 +5563,11 @@ glsl-noise@^0.0.0:
   resolved "https://registry.npmjs.org/glsl-noise/-/glsl-noise-0.0.0.tgz"
   integrity sha512-b/ZCF6amfAUb7dJM/MxRs7AetQEahYzJ8PtgfrmEdtw6uyGOr+ZSGtgjFm6mfsBkxJ4d2W7kg+Nlqzqvn3Bc0w==
 
+goober@^2.1.10:
+  version "2.1.11"
+  resolved "https://registry.npmjs.org/goober/-/goober-2.1.11.tgz"
+  integrity sha512-5SS2lmxbhqH0u9ABEWq7WPU69a4i2pYcHeCxqaNq6Cw3mnrF0ghWNM4tEGid4dKy8XNIAUbuThuozDHHKJVh3A==
+
 graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
   version "4.2.10"
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz"
@@ -8277,6 +8282,13 @@ react-composer@^5.0.3:
   dependencies:
     prop-types "^15.6.0"
 
+react-cssfx-loading@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/react-cssfx-loading/-/react-cssfx-loading-2.1.0.tgz"
+  integrity sha512-0SnS6HpaeLSaTxNuND6sAKTQmoKgjwFb9G2ltyEMmA5ARNN6TRQfiJ8PfaYM9RwVEOhDxIzGI7whb2zeI1VRxw==
+  dependencies:
+    goober "^2.1.10"
+
 react-dev-utils@^12.0.1:
   version "12.0.1"
   resolved "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-12.0.1.tgz"
@@ -8747,11 +8759,6 @@ safe-buffer@5.2.1, safe-buffer@>=5.1.0, safe-buffer@^5.1.0, safe-buffer@~5.2.0:
   version "2.1.2"
   resolved "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-
-sakura-js@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/sakura-js/-/sakura-js-1.1.1.tgz#c932a6a5857537ad6dc7131cbbfec1844194dace"
-  integrity sha512-JWTK9RauYrZoDMymmuXRH+fFdqh9uJqZUdy0bUbt001w6N9QO82+gpTGoTtwDn+KROnffQIMTfQOvG8t9GwQDw==
 
 sanitize.css@*:
   version "13.0.0"
@@ -9461,10 +9468,10 @@ three-stdlib@^2.13.0:
     potpack "^1.0.1"
     zstddec "^0.0.2"
 
-three@^0.143.0:
-  version "0.143.0"
-  resolved "https://registry.npmjs.org/three/-/three-0.143.0.tgz"
-  integrity sha512-oKcAGYHhJ46TGEuHjodo2n6TY2R6lbvrkp+feKZxqsUL/WkH7GKKaeu6RHeyb2Xjfk2dPLRKLsOP0KM2VgT8Zg==
+three@^0.144.0:
+  version "0.144.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.144.0.tgz#2818517169f8ff94eea5f664f6ff1fcdcd436cc8"
+  integrity sha512-R8AXPuqfjfRJKkYoTQcTK7A6i3AdO9++2n8ubya/GTU+fEHhYKu1ZooRSCPkx69jbnzT7dD/xEo6eROQTt2lJw==
 
 throat@^6.0.1:
   version "6.0.1"
