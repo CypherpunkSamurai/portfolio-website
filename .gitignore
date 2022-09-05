@@ -23,5 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # lock files (code is backwards compatible)
-*.lock
+package-lock.json
+yarn.lock
 .yarnclean

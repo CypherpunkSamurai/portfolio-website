@@ -18,7 +18,7 @@ import { FadingDots } from 'react-cssfx-loading';
 function Loader() {
   return (
     <Html>
-        <FadingDots color="#de4ee2" />
+        <FadingDots color="#DF5C59" />
     </Html>
   )
 }
